@@ -3,10 +3,10 @@ medallon.toLowerCase();
 carne=0;
 pollo=0;
 veggie=0;
-do{
+while (medallon!="carne" && medallon!="pollo" && medallon!="veggie"){
     medallon=prompt("Respuesta no válida. Por favor, ingrese el tipo de medallón que (Carne/Pollo/Veggie):");
     medallon.toLowerCase();
-}while (medallon!="carne" && medallon!="pollo" && medallon!="veggie");
+}
 if (medallon=="carne"){
     carne+=1;
 }
@@ -24,10 +24,10 @@ pan.toLowerCase();
 panB=0;
 panN=0;
 panSG=0;
-do{
+while (pan!="pan blanco" && pan!="pan negro" && pan!="pan sin gluten"){
     pan=prompt("Respuesta no válida. Por favor, ingrese el tipo de pan que prefiere (Pan blanco/Pan negro/Pan sin gluten:");
     pan.toLowerCase();
-}while (pan!="pan blanco" && pan!="pan negro" && pan!="pan sin gluten");
+}
 if (pan=="pan blanco"){
     panB+=1;
 }
@@ -51,7 +51,7 @@ mostaza=0;
 adicional="";
 aderezo="";
 
-do{
+while (preg=="si"){
     extra=prompt("Elija entre queso,tomate,cebolla,lechuga,mayonesa,mostaza:");
     extra.toLowerCase();
     if(extra=="queso"){
@@ -83,7 +83,7 @@ do{
     }
     preg=prompt("¿Desea seguir agregando condimentos? (si/no):")
     preg.toLowerCase();
-}while (adicional=="si");
+}
 base=document.getElementById("adicionales");
 base.innerHTML=`<p>Adicionales: ${adicional}</p>`;
 base=document.getElementById("aderezos");
