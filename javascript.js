@@ -1,11 +1,11 @@
 medallon=prompt("Por favor, ingrese el tipo de medallón (Carne/Pollo/Veggie):");
-medallon.toLowerCase();
+medallon=medallon.toLowerCase();
 carne=0;
 pollo=0;
 veggie=0;
 while (medallon!="carne" && medallon!="pollo" && medallon!="veggie"){
     medallon=prompt("Respuesta no válida. Por favor, ingrese el tipo de medallón que (Carne/Pollo/Veggie):");
-    medallon.toLowerCase();
+    medallon=medallon.toLowerCase();
 }
 if (medallon=="carne"){
     carne+=1;
@@ -20,13 +20,13 @@ base=document.getElementById("medallon");
 base.innerHTML=`<p>Medallón: ${medallon}</p>`;
 
 pan=prompt("Elija el tipo de pan que prefiere (Pan blanco/Pan negro/Pan sin gluten:)");
-pan.toLowerCase();
+pan=pan.toLowerCase();
 panB=0;
 panN=0;
 panSG=0;
 while (pan!="pan blanco" && pan!="pan negro" && pan!="pan sin gluten"){
     pan=prompt("Respuesta no válida. Por favor, ingrese el tipo de pan que prefiere (Pan blanco/Pan negro/Pan sin gluten:");
-    pan.toLowerCase();
+    pan=pan.toLowerCase();
 }
 if (pan=="pan blanco"){
     panB+=1;
@@ -41,7 +41,7 @@ base=document.getElementById("pan");
 base.innerHTML=`<p>Pan: ${pan}</p>`;
 
 preg=prompt("¿Desea agregar adicionales? (si/no):");
-preg.toLowerCase();
+preg=preg.toLowerCase();
 queso=0;
 tomate=0;
 cebolla=0;
@@ -53,7 +53,7 @@ aderezo="";
 
 while (preg=="si"){
     extra=prompt("Elija entre queso,tomate,cebolla,lechuga,mayonesa,mostaza:");
-    extra.toLowerCase();
+    extra=extra.toLowerCase();
     if(extra=="queso"){
         queso+=1;
         adicional+=extra+", ";
@@ -82,7 +82,7 @@ while (preg=="si"){
         alert("Los valores ingresados son incorrectos")
     }
     preg=prompt("¿Desea seguir agregando condimentos? (si/no):")
-    preg.toLowerCase();
+    preg=preg.toLowerCase();
 }
 base=document.getElementById("adicionales");
 base.innerHTML=`<p>Adicionales: ${adicional}</p>`;
