@@ -42,6 +42,9 @@ base.innerHTML=`<p>Pan: ${pan}</p>`;
 
 preg=prompt("¿Desea agregar adicionales? (si/no):");
 preg=preg.toLowerCase();
+while (preg!="si"&&preg!="no"){
+    preg=prompt("Respuesta inválida. ¿Desea agregar adicionales? (Responder si/no):")
+}
 queso=0;
 tomate=0;
 cebolla=0;
@@ -83,6 +86,9 @@ while (preg=="si"){
     }
     preg=prompt("¿Desea seguir agregando condimentos? (si/no):")
     preg=preg.toLowerCase();
+    while (preg!="si"&&preg!="no"){
+        preg=prompt("Respuesta inválida. ¿Desea agregar adicionales? (Responder si/no):")
+    }
 }
 base=document.getElementById("adicionales");
 base.innerHTML=`<p>Adicionales: ${adicional}</p>`;
