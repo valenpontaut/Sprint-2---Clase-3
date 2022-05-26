@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(247, 229, 192);
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+body{
+    background-color: rgb(255, 247, 230);
+}
+section{
+    display: flex;
+    font-size: 30px;
+}
+.orden{
+    width: 50%;
+    padding: 20px;
+}
+.img{
+    padding-top: 20px;
+}
